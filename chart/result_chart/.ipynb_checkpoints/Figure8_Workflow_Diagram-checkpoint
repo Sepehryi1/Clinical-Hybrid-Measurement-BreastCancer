@@ -1,0 +1,19 @@
+digraph {
+	rankdir=LR size="8,4"
+	A [label="9 Morphological Features"]
+	B [label="Base Learners
+(LR, RF, SVM, XGB)"]
+	C [label="Out-of-Fold
+Stacking Matrix"]
+	D [label="Meta-Learner
+(Logistic Regression)"]
+	E [label="Calibrated Probability
++ Conformal Set"]
+	F [label="SHAP Explanations
+& Visual Analytics"]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+	E -> F
+}
